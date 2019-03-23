@@ -1,0 +1,6 @@
+{{#each artists.items}}
+<img src="{{this.images.1.url}}" width="300px">
+<p>{{this.name}}</p>
+<a style="display: block; margin-bottom: 80px" href="/albums/{{this.id}}">View Artist Albums</a> <!-- 'artistId' from spotifyApi.searchArtists() -->
+{{/each}}
+
